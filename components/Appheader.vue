@@ -11,7 +11,11 @@
   >
     <v-btn
       href="#home"
-      style="margin-left: 100px; margin-top: 30px"
+      :style="
+        !$vuetify.breakpoint.mdAndDown
+          ? 'margin-left: 100px; margin-top: 30px'
+          : 'margin-left: 10px; margin-top: 30px'
+      "
       color="transparent"
       flat
       tile
@@ -26,7 +30,7 @@
     </v-btn>
 
     <v-spacer></v-spacer>
-    <div class="header1">
+    <div class="header1 d-none d-flex-md">
       <ul class="list1" data-aos="fade-down" data-aos-offset="0">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>

@@ -9,12 +9,16 @@
     width="50vw"
   >
     <div class="d-flex align-center flex-column" v-if="pos == 'right'">
-      <div style="height: 333px">
+      <div
+        :style="
+          $vuetify.breakpoint.mdAndDown ? 'height: 100%' : 'height: 333px'
+        "
+      >
         <v-img
           class="image-project"
           aspect-ratio="1.5"
-          min-width="300px"
-          width="100vw"
+          min-width="250px"
+          width="80vw"
           max-width="500px"
           :src="item.src"
         ></v-img>
@@ -104,7 +108,11 @@
           </v-col>
         </v-row>
       </v-card>
-      <div style="height: 333px">
+      <div
+        :style="
+          $vuetify.breakpoint.mdAndDown ? 'height: 100%' : 'height: 333px'
+        "
+      >
         <v-img
           class="image-project left"
           :style="
@@ -114,7 +122,7 @@
           "
           aspect-ratio="1.5"
           min-width="300px"
-          width="100vw"
+          width="80vw"
           max-width="500px"
           :src="item.src"
         ></v-img>

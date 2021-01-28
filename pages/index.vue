@@ -111,8 +111,12 @@
           </div>
 
           <h5
-            style="width: 60%; margin-bottom: 50px"
-            :style="`width: ${$vuetify.breakpoint.mdAndDown ? '100%' : '80%'}`"
+            style="margin-bottom: 50px"
+            :style="
+              $vuetify.breakpoint.mdAndDown
+                ? 'width:100%; padding:10px'
+                : 'width:80%'
+            "
             data-aos="fade-up"
             data-aos-offset="-300"
             data-aos-delay="1000"
@@ -355,6 +359,7 @@
               :vertical="$vuetify.breakpoint.mdAndDown ? false : true"
               dark
               :grow="$vuetify.breakpoint.mdAndDown ? true : false"
+              class="ma-4"
             >
               <v-tab v-for="(item, n) in items" :key="n">
                 <h4 class="main-color" style="text-transform: capitalize">
@@ -398,7 +403,7 @@
         >
       </div>
     </div>
-    <div id="project" class="d-flex justify-center align-center py-10 px-5">
+    <div id="project" class="d-flex justify-center align-center py-10 px-0">
       <div>
         <v-card color="work-card" tile flat class="">
           <div class="d-flex align-center justify-center mb-10">
