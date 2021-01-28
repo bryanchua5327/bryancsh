@@ -469,7 +469,6 @@
       </div>
     </div> -->
 
-
     <div id="contact" class="d-flex justify-center align-center">
       <div class="ma-auto text-center">
         <h3 class="main-color mb-4">Feel free to</h3>
@@ -486,15 +485,13 @@
 </template>
 
 <script>
-import Projectcard from '~/components/Projectcard.vue'
-import Headertext from '~/components/Headertext.vue'
+import Projectcard from "~/components/Projectcard.vue";
+import Headertext from "~/components/Headertext.vue";
 export default {
   layout: "layout3",
   components: {
     Projectcard,
     Headertext,
-    
-
   },
 
   data() {
