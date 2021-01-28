@@ -23,7 +23,7 @@ AOS.init({
 });
 export default {
   components: {
-    AppHeader: () => import("~/components/AppHeader.vue"),
+    AppHeader: () => import("~/components/Appheader.vue"),
   },
 };
 </script>

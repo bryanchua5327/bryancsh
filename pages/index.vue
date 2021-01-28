@@ -488,10 +488,10 @@
 export default {
   layout: "layout3",
   components: {
-    Headertext: () => import("~/components/HeaderText.vue"),
-    HoverCard: () => import("~/components/hoverCard.vue"),
-    ImpactText: () => import("~/components/ImpactText.vue"),
-    ProjectCard: () => import("~/components/ProjectCard.vue"),
+    Headertext: () => import("~/components/Headertext.vue"),
+    HoverCard: () => import("~/components/Hovercard.vue"),
+    ImpactText: () => import("~/components/Impacttext.vue"),
+    ProjectCard: () => import("~/components/Projectcard.vue"),
   },
 
   data() {

@@ -24,8 +24,8 @@ AOS.init({
 });
 export default {
   components: {
-    AppHeader: () => import("~/components/AppHeader.vue"),
-    AppFooter: () => import("~/components/AppFooter.vue"),
+    AppHeader: () => import("~/components/Appheader.vue"),
+    AppFooter: () => import("~/components/Appfooter.vue"),
   },
   mounted() {
     setTimeout(() => {
