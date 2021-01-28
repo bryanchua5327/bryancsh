@@ -180,7 +180,7 @@
               :class="$vuetify.breakpoint.mdAndDown ? 'text-center ' : 'ml-16 '"
               class="mt-3"
             >
-              <h5>
+              <h4>
                 Hello, my name is Bryan Chua and I'm a self-taught software
                 engineer based in
                 <span class="main-color">KL, Malaysia</span>. I graduated from
@@ -213,7 +213,7 @@
                 <br />
                 <br />
                 <br />
-              </h5>
+              </h4>
               <h4>
                 I code mainly in
                 <span class="main-color"> Javascript and Python</span>, and here
@@ -327,7 +327,10 @@
           :class="$vuetify.breakpoint.mdAndDown ? 'text-center' : ''"
         >
           <v-card color="work-card" tile flat height="450px">
-            <div class="d-flex align-center mb-10" :class="$vuetify.breakpoint.mdAndDown ? 'justify-center' : ''">
+            <div
+              class="d-flex align-center mb-10"
+              :class="$vuetify.breakpoint.mdAndDown ? 'justify-center' : ''"
+            >
               <div class="d-flex align-center">
                 <v-icon id="diamond" color="#00eaf2">mdi-cards-diamond</v-icon>
                 <h2 class="mx-10">Work Experiences</h2>
