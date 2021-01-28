@@ -427,10 +427,10 @@
             </svg>
           </div>
           <div v-for="(item, n) in projects" :key="n">
-            <ProjectCard
+            <Projectcard
               :pos="n % 2 == 0 ? 'right' : 'left'"
               :item="projects[n]"
-            ></ProjectCard>
+            ></Projectcard>
             <div style="height: 100px"></div>
           </div>
         </v-card>
@@ -489,9 +489,8 @@ export default {
   layout: "layout3",
   components: {
     Headertext: () => import("~/components/Headertext.vue"),
-    HoverCard: () => import("~/components/Hovercard.vue"),
-    ImpactText: () => import("~/components/Impacttext.vue"),
-    ProjectCard: () => import("~/components/Projectcard.vue"),
+ 
+    Projectcard: () => import("~/components/Projectcard.vue"),
   },
 
   data() {

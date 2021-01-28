@@ -19,15 +19,7 @@ AOS.init({
   easing: "ease", // default easing for AOS animations});
 });
 export default {
-  components: {
-    AppHeader: () => import("~/components/Appheader.vue"),
-    AppFooter: () => import("~/components/Appfooter.vue"),
-  },
-  mounted() {
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 3000);
-  },
+
   data() {
     return {
       isLoading: true,
