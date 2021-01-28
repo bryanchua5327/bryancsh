@@ -1,6 +1,6 @@
 <template>
   <v-main fluid class="pa-0 ma-0">
-    <v-container fluid>
+    <v-container fluid color="blue">
       <appheader
         class="appheader"
         data-aos="fade-down"

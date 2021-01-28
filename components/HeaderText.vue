@@ -2,10 +2,10 @@
   <h1 class="wordCarousel">
     <div>
       <ul class="flip pa-0">
-        <li>Bryan Chua</li>
-        <li>A Fullstack Dev</li>
-        <li>A Malaysian</li>
-        <li>A Tunnel Engineer</li>
+        <li><h1 style="color: #707070">I'm Happy You're Here!</h1></li>
+        <li><h1 style="color: #707070">I'm a Software Engineer</h1></li>
+        <li><h1 style="color: #707070">I'm Proudly Malaysian!</h1></li>
+        <li><h1 style="color: #707070">I Worked in A Tunnel!</h1></li>
       </ul>
     </div>
   </h1>
@@ -23,14 +23,16 @@ $flip: 4;
   font-weight: 100;
   color: #444444;
   display: relative;
-  z-index: 100;
+
   width: 100%;
+}
+.grey {
+  color: #707070;
 }
 .wordCarousel > div {
   overflow-y: hidden;
   position: relative;
   height: 120px;
-  width: 60vw;
   padding-top: 10px;
   margin-top: -10px;
 }

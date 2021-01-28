@@ -1,13 +1,46 @@
 <template>
-  <div>
+  <v-app-bar
+    fixed
+    color="rgba(0,15,42,0.5)"
+    dark
+    hide-on-scroll
+    flat
+    prominent
+    class="pa-0 glassCard"
+    elevation="0"
+  >
+    <v-btn
+      href="#home"
+      style="margin-left: 100px; margin-top: 30px"
+      color="transparent"
+      flat
+      tile
+      elevation="0"
+    >
+      <object
+        width="32px"
+        type="image/svg+xml"
+        id="svg-object"
+        :data="require('@/assets/Blogo3.svg')"
+      ></object>
+    </v-btn>
+
+    <v-spacer></v-spacer>
     <div class="header1">
-      <ul class="list1">
+      <ul class="list1" data-aos="fade-down" data-aos-offset="0">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#home">Contact</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="Bryan_Chua Seck_How_CV.pdf" target="_blank"
+            ><button class="button main-color">Resume</button></a
+          >
+        </li>
       </ul>
     </div>
-  </div>
+  </v-app-bar>
 </template>
 
 <script>
@@ -15,28 +48,27 @@ export default {};
 </script>
 
 <style>
-.header {
-  z-index: 1;
-}
 .header1 > .list1 {
   list-style-type: none;
   margin: 0;
   padding: 0px;
   overflow: hidden;
-  height: 50px;
-  position: fixed;
-  top: 40px;
-  right: 40px;
+
+  display: flex;
+  justify-items: space-between;
 }
 
 .header1 > .list1 > li {
   float: right;
+  color: white;
+  justify-self: center;
+  align-self: center;
 }
 
 .header1 > .list1 > li > a {
   display: block;
   /* color: rgba(0, 0, 0, 0.582); */
-  color: white;
+  color: grey;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -44,6 +76,6 @@ export default {};
 
 /* Change the link color to #111 (black) on hover */
 .header1 > .list1 > li > a:hover {
-  color: rgba(0, 0, 0, 1);
+  color: white;
 }
 </style>
