@@ -21,7 +21,7 @@
         width="32px"
         type="image/svg+xml"
         id="svg-object"
-        :data="require('@/assets/Blogo3.svg')"
+        data="Blogo3.svg"
       ></object>
     </v-btn>
 

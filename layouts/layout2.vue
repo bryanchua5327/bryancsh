@@ -1,11 +1,11 @@
 <template>
   <v-main fluid class="pa-0 ma-0">
     <v-container fluid color="blue">
-      <appheader
+      <AppHeader
         class="appheader"
         data-aos="fade-down"
         data-aos-offset="0"
-      ></appheader>
+      ></AppHeader>
       <nuxt />
     </v-container>
   </v-main>
@@ -23,7 +23,7 @@ AOS.init({
 });
 export default {
   components: {
-    appheader: () => import("~/components/Appheader.vue"),
+    AppHeader: () => import("~/components/AppHeader.vue"),
   },
 };
 </script>
