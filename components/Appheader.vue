@@ -30,7 +30,7 @@
     </v-btn>
 
     <v-spacer></v-spacer>
-    <div class="header1 d-none d-flex-md">
+    <div class="header1" v-if="!$vuetify.breakpoint.mdAndDown">
       <ul class="list1" data-aos="fade-down" data-aos-offset="0">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -44,6 +44,13 @@
         </li>
       </ul>
     </div>
+    <a
+      href="Bryan_Chua Seck_How_CV.pdf"
+      target="_blank"
+      v-if="$vuetify.breakpoint.mdAndDown"
+      style="padding: 14px 16px; align-self: center"
+      ><button class="button main-color">Resume</button></a
+    >
   </v-app-bar>
 </template>
 

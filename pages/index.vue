@@ -310,18 +310,14 @@
         >
       </div>
     </div>
-    <div style="position: relative; margin-bottom: 300px">
+    <div style="margin-bottom: 300px">
       <div
         id="work"
         class="d-flex justify-center align-center"
         style="height: 100vh"
       >
         <div
-          :style="
-            $vuetify.breakpoint.mdAndDown
-              ? `style='width: 100%'`
-              : `style='width: 60%'`
-          "
+          :style="$vuetify.breakpoint.mdAndDown ? 'width: 100%' : 'width: 60%'"
           data-aos="fade"
           :class="$vuetify.breakpoint.mdAndDown ? 'text-center' : ''"
         >
@@ -359,7 +355,7 @@
               :vertical="$vuetify.breakpoint.mdAndDown ? false : true"
               dark
               :grow="$vuetify.breakpoint.mdAndDown ? true : false"
-              class="ma-4"
+              :show-arrows="$vuetify.breakpoint.mdAndDown ? true : true"
             >
               <v-tab v-for="(item, n) in items" :key="n">
                 <h4 class="main-color" style="text-transform: capitalize">
@@ -475,7 +471,7 @@
     </div> -->
 
     <div id="contact" class="d-flex justify-center align-center">
-      <div class="ma-auto text-center">
+      <div class="ma-auto text-center pa-4">
         <h3 class="main-color mb-4">Feel free to</h3>
         <h1 class="mb-4">Drop me a DM</h1>
         <h4 style="margin-bottom: 100px">I look forward to hearing from you</h4>
