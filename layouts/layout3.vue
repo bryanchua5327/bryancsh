@@ -1,12 +1,9 @@
 <template>
   <v-app>
     <v-main fluid class="pa-0 ma-0">
-
-
       <v-container fluid class="background-color">
-        <AppHeader class="appheader"></AppHeader>
+        <Appheader class="appheader"></Appheader>
         <nuxt />
-        <AppFooter></AppFooter>
       </v-container>
     </v-main>
   </v-app>
@@ -24,8 +21,7 @@ AOS.init({
 });
 export default {
   components: {
-    AppHeader: () => import("~/components/Appheader.vue"),
-    AppFooter: () => import("~/components/Appfooter.vue"),
+    Appheader: () => import("~/components/Appheader.vue"),
   },
   mounted() {
     setTimeout(() => {
