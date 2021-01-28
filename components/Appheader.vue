@@ -6,7 +6,7 @@
     hide-on-scroll
     flat
     prominent
-    class="pa-0 glassCard"
+    class="pa-auto glassCard"
     elevation="0"
   >
     <v-btn
@@ -61,7 +61,7 @@ export default {};
 <style>
 .header1 > .list1 {
   list-style-type: none;
-  margin: 0;
+  margin: 20px;
   padding: 0px;
   overflow: hidden;
 

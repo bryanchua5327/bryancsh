@@ -296,5 +296,39 @@ a:hover {
     display: flex;
     justify-items: center;
   }
+  h1 {
+    font-family: "Open Sans";
+    font-weight: 800px;
+    font-size: 40px;
+    color: #cbcbcb;
+    letter-spacing: 0.05em;
+  }
+  h2 {
+    font-family: "Open Sans";
+    font-weight: Bold;
+    font-size: 25px;
+    color: #cbcbcb;
+    letter-spacing: 0.05em;
+  }
+  h3 {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #707070;
+    letter-spacing: 0.291em;
+  }
+
+  h4 {
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: #707070;
+    letter-spacing: 0.2em;
+  }
+  h5 {
+    font-family: "Open Sans";
+    font-weight: lighter;
+    font-size: 12px;
+    color: #707070;
+    letter-spacing: 0.15em;
+  }
 }
 </style>

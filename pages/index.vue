@@ -122,7 +122,8 @@
             data-aos-delay="1000"
           >
             I'm a software engineer currently based in Malaysia, working in a
-            R&amp;D team responsible for digitalizing tunneling works in Gamuda.
+            Reasearch and Development team responsible for digitalizing
+            tunneling works in Gamuda.
           </h5>
           <a href="#about"
             ><button class="button main-color h3">
@@ -190,7 +191,7 @@
                 in 2019. <br />
                 <br />
 
-                I started off my career by working as a
+                My career then began with me being a
                 <span class="main-color">tunnel engineer</span>, building
                 Malaysia's MRT SSP line for about a year
                 <br />
@@ -200,20 +201,24 @@
                 the<span class="main-color"> R&D team</span> and work on
                 projects focused on
                 <span class="main-color"
-                  >digitalizing tunneling works in Malaysia</span
+                  >digitalizing tunneling works in Malaysia.</span
                 >
                 <br />
                 <br />
 
                 It is thanks to this opportunity that I found passion in
-                software engineering. Moving forward, I'll continually strive to
-                be a better
+                software engineering. Moving forward, I'll continuously strive
+                to be a better
                 <span class="main-color">full-stack developer</span>.
                 <br />
                 <br />
                 <br />
               </h5>
-              <h4>Technology I know and love:</h4>
+              <h4>
+                I code mainly in
+                <span class="main-color"> Javascript and Python</span>, and here
+                are some of the previous tech I'm familiar with
+              </h4>
             </div>
           </div>
         </v-col>
@@ -314,15 +319,15 @@
       <div
         id="work"
         class="d-flex justify-center align-center"
-        style="height: 100vh"
+        style="position: relative; height: 100vh"
       >
         <div
-          :style="$vuetify.breakpoint.mdAndDown ? 'width: 100%' : 'width: 60%'"
+          :style="$vuetify.breakpoint.mdAndDown ? 'width: 100%' : 'width: 50%'"
           data-aos="fade"
           :class="$vuetify.breakpoint.mdAndDown ? 'text-center' : ''"
         >
           <v-card color="work-card" tile flat height="450px">
-            <div class="d-flex align-center justify-center mb-10">
+            <div class="d-flex align-center mb-10" :class="$vuetify.breakpoint.mdAndDown ? 'justify-center' : ''">
               <div class="d-flex align-center">
                 <v-icon id="diamond" color="#00eaf2">mdi-cards-diamond</v-icon>
                 <h2 class="mx-10">Work Experiences</h2>
@@ -373,9 +378,9 @@
                     color="work-card"
                     flat
                     tile
-                    class="ma-2"
+                    class="ma-auto"
                     min-width="300px"
-                    max-width="600px"
+                    max-width="900px"
                   >
                     <h4 class="grey-light mb-10">{{ item.title }}</h4>
                     <h4 class="grey-light mb-10">{{ item.duration }}</h4>
@@ -392,11 +397,11 @@
             </v-tabs>
           </v-card>
         </div>
-      </div>
-      <div id="next">
-        <v-btn icon href="#project"
-          ><v-icon color="#707070" x-large>mdi-chevron-down</v-icon></v-btn
-        >
+        <div style="position: absolute; bottom: 0px">
+          <v-btn icon href="#project"
+            ><v-icon color="#707070" x-large>mdi-chevron-down</v-icon></v-btn
+          >
+        </div>
       </div>
     </div>
     <div id="project" class="d-flex justify-center align-center py-10 px-0">
@@ -405,7 +410,7 @@
           <div class="d-flex align-center justify-center mb-10">
             <div class="d-flex align-center">
               <v-icon id="diamond" color="#00eaf2">mdi-cards-diamond</v-icon>
-              <h2 class="mx-10">Notable Projects</h2>
+              <h2 class="mx-10 text-center">Notable Projects</h2>
             </div>
             <svg
               class="d-none d-xl-flex d-md-none"
@@ -539,7 +544,7 @@ export default {
           descriptions: [
             "Started an initiative to teach young kids to code through block programming.",
             "We made the courses super interactive by allowing kids to create their own world using shapes and physics.",
-            "The final product is a viewable VR experience which kids would share and explain their creations",
+            "The final product is a VR world in which kids can view and interact with.",
           ],
         },
       ],

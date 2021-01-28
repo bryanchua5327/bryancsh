@@ -6,7 +6,7 @@
     tile
     data-aos="fade-up"
     data-aos-offset="300px"
-    width="50vw"
+    :width="$vuetify.breakpoint.xsOnly ? '100vw' : '50vw'"
   >
     <div class="d-flex align-center flex-column" v-if="pos == 'right'">
       <div
@@ -17,7 +17,7 @@
         <v-img
           class="image-project"
           aspect-ratio="1.5"
-          min-width="250px"
+          min-width="200px"
           width="80vw"
           max-width="500px"
           :src="item.src"
@@ -121,7 +121,7 @@
               : 'position: absolute; right: 0px'
           "
           aspect-ratio="1.5"
-          min-width="300px"
+          min-width="200px"
           width="80vw"
           max-width="500px"
           :src="item.src"
