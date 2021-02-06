@@ -1,5 +1,17 @@
 <template>
-  <div class="mainDiv">
+  <div class="mainDiv" :class="$vuetify.breakpoint.mdAndDown ? 'pa-5 ' : ''">
+    <div
+      class="pa-5"
+      data-aos="zoom-right"
+      data-aos-duration="500"
+      v-if="!$vuetify.breakpoint.mdAndDown"
+    >
+      <v-img
+        aspect-ratio="1"
+        class="cutterheadImg"
+        src="cutterhead-min2.png"
+      ></v-img>
+    </div>
     <div
       id="email"
       class="d-flex align-center email"
@@ -10,14 +22,14 @@
       >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="300"
+        width="800"
         height="1"
-        viewBox="0 0 300 1"
+        viewBox="0 0 800 1"
       >
         <line
           id="Line_14"
           data-name="Line 14"
-          x2="300"
+          x2="800"
           transform="translate(0 0.5)"
           fill="none"
           stroke="#707070"
@@ -34,44 +46,15 @@
       >
         <v-col md="10" sm="10" xs="10" xl="6" lg="10" class="landing">
           <div>
-            <h4 class="main-color mt-4">Hey there, I'm</h4>
-            <h1 data-aos="fade-up">Bryan Chua.</h1>
+            <h3 class="mt-4 main-color" data-aos="fade-up">Hey there, I'm</h3>
+            <h1 data-aos="fade-up" data-aos-delay="400">Bryan Chua.</h1>
           </div>
 
           <Headertext
             class="mb-4 d-none d-xl-flex d-lg-flex"
             data-aos="zoom-left"
-            data-aos-delay="1000"
+            data-aos-delay="600"
           ></Headertext>
-          <div class="lines d-none d-xl-flex d-lg-none">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="336"
-              height="299"
-              viewBox="0 0 336 299"
-              data-aos="fade-up-left"
-              data-aos-delay="1400"
-            >
-              <line
-                id="Line_2"
-                data-name="Line 2"
-                y1="299"
-                transform="translate(286)"
-                fill="none"
-                stroke="#707070"
-                stroke-width="1"
-              />
-              <path
-                id="Path_7"
-                data-name="Path 7"
-                d="M0,0H336"
-                transform="translate(0 240)"
-                fill="none"
-                stroke="#707070"
-                stroke-width="1"
-              />
-            </svg>
-          </div>
 
           <div
             class="d-flex justify-space-between align-center"
@@ -87,8 +70,8 @@
               icon
               href="https://www.linkedin.com/in/bryan-chua-423788ab/"
               target="_blank"
-              data-aos="fade-down"
-              data-aos-delay="600"
+              data-aos="fade-up"
+              data-aos-delay="800"
               ><v-icon x-large color="white"> mdi-linkedin</v-icon></v-btn
             >
             <v-btn
@@ -96,7 +79,7 @@
               href="https://github.com/bryanchua5327"
               target="_blank"
               data-aos="fade-up"
-              data-aos-delay="700"
+              data-aos-delay="1000"
               ><v-icon x-large color="white">mdi-github</v-icon></v-btn
             >
             <v-btn
@@ -105,12 +88,12 @@
               target="_blank"
               x-large
               data-aos="fade-up"
-              data-aos-delay="800"
+              data-aos-delay="1200"
               ><v-icon x-large color="white">mdi-instagram</v-icon></v-btn
             >
           </div>
 
-          <h5
+          <h4
             style="margin-bottom: 50px"
             :style="
               $vuetify.breakpoint.mdAndDown
@@ -119,214 +102,222 @@
             "
             data-aos="fade-up"
             data-aos-offset="-300"
-            data-aos-delay="1000"
+            data-aos-delay="1400"
           >
             I'm a software engineer currently based in Malaysia, working in a
             Reasearch and Development team responsible for digitalizing
             tunneling works in Gamuda.
-          </h5>
-          <a href="#about"
-            ><button class="button main-color h3">
-              <h3 class="main-color">Find out more</h3>
-            </button></a
-          >
+          </h4>
+          <div data-aos="fade-up" data-aos-offset="-300" data-aos-delay="1600">
+            <a href="#about"
+              ><button class="button main-color h3">
+                <h3 class="main-color">Find out more</h3>
+              </button></a
+            >
+          </div>
         </v-col>
       </v-row>
     </div>
 
     <div
       id="about"
-      style="height: 100vh"
-      class="d-flex justify-center align-center"
+      style="min-height: 100%"
       data-aos="fade"
+      class="d-flex flex-column justify-center align-center"
     >
-      <v-row justify="center">
-        <v-col
-          offset-lg="1"
-          offset-xl="1"
-          xs="10"
-          sm="10"
-          md="10"
-          lg="5"
-          xl="5"
-        >
-          <div class="ma-auto pa-5">
-            <div class="d-flex align-center justify-center mb-10">
-              <div class="d-flex align-center heading">
+      <div>
+        <v-row justify="center">
+          <v-col
+            offset-lg="1"
+            offset-xl="1"
+            xs="10"
+            sm="10"
+            md="10"
+            lg="5"
+            xl="5"
+          >
+            <div>
+              <div
+                class="d-flex mb-10"
+                :class="
+                  $vuetify.breakpoint.mdAndDown ? 'justify-center  ' : ' '
+                "
+              ></div>
+              <div
+                class="d-flex heading"
+                :class="
+                  $vuetify.breakpoint.mdAndDown ? 'justify-center  ' : ' '
+                "
+              >
                 <v-icon id="diamond" color="#00eaf2">mdi-cards-diamond</v-icon>
                 <h2 class="mx-10">About me</h2>
               </div>
-              <svg
-                class="d-none d-xl-flex d-md-none"
-                data-aos="fade-left"
-                data-aos-delay="400"
-                xmlns="http://www.w3.org/2000/svg"
-                width="400"
-                height="1"
-                viewBox="0 0 351 1"
+              <div
+                class="mt-5"
+                :class="
+                  $vuetify.breakpoint.mdAndDown ? 'text-center ' : ' ml-16 '
+                "
               >
-                <line
-                  id="Line_12"
-                  data-name="Line 12"
-                  x2="400"
-                  transform="translate(0 0.5)"
-                  fill="none"
-                  stroke="#707070"
-                  stroke-width="1"
-                />
-              </svg>
+                <h4>
+                  Hello, my name is Bryan Chua and I'm a self-taught software
+                  engineer based in
+                  <span class="main-color">KL, Malaysia</span>. I'm a proud
+                  graduate of the
+                  <span class="main-color"
+                    >University of Technology Malaysia</span
+                  >
+                  in 2019. <br />
+                  <br />
+
+                  I started my career as a
+                  <span class="main-color">tunnel engineer</span>, and worked in
+                  a Variable Density Tunnel Boring Machine.
+
+                  <br />
+                  <br />
+
+                  To ensure the delivery of the
+                  <span class="main-color"
+                    >Mass Rapid Transit Project - SSP Line 2 </span
+                  >in the heart of KL.
+                  <br />
+                  <br />
+
+                  With my experience in the tunnels, I got to join the<span
+                    class="main-color"
+                  >
+                    R&D team</span
+                  >
+                  and work on projects focused on
+                  <span class="main-color"
+                    >digitalizing tunneling works in Malaysia.</span
+                  >
+                  <br />
+                  <br />
+
+                  Thanks to this opportunity, I got to explore more of the
+                  wonderful world of software engineering.
+                  <br />
+                  <br />
+                </h4>
+                <h4>
+                  I code mainly in
+                  <span class="main-color"> Javascript and Python</span>, and
+                  below are technologies I'm familiar with:
+                </h4>
+              </div>
             </div>
-            <div
-              :class="$vuetify.breakpoint.mdAndDown ? 'text-center ' : 'ml-16 '"
-              class="mt-3"
-            >
-              <h4>
-                Hello, my name is Bryan Chua and I'm a self-taught software
-                engineer based in
-                <span class="main-color">KL, Malaysia</span>. I graduated from
-                the
-                <span class="main-color"
-                  >University of Technology Malaysia</span
-                >
-                in 2019. <br />
-                <br />
-
-                My career then began with me being a
-                <span class="main-color">tunnel engineer</span>, building
-                Malaysia's MRT SSP line for about a year
-                <br />
-                <br />
-
-                With my experience in tunneling, I got the opportunity to join
-                the<span class="main-color"> R&D team</span> and work on
-                projects focused on
-                <span class="main-color"
-                  >digitalizing tunneling works in Malaysia.</span
-                >
-                <br />
-                <br />
-
-                It is thanks to this opportunity that I found passion in
-                software engineering. Moving forward, I'll continuously strive
-                to be a better
-                <span class="main-color">full-stack developer</span>.
-                <br />
-                <br />
-                <br />
-              </h4>
-              <h4>
-                I code mainly in
-                <span class="main-color"> Javascript and Python</span>, and here
-                are some of the previous tech I'm familiar with
-              </h4>
+          </v-col>
+          <v-col
+            lg="4"
+            xl="4"
+            align-self="end"
+            justify-self="end"
+            v-if="!$vuetify.breakpoint.mdAndDown"
+          >
+            <div class="pa-5">
+              <v-img
+                aspect-ratio="1"
+                width="80%"
+                class="image-blur justify-self-center"
+                src="IMG_20200926_175017-01.jpg"
+              ></v-img>
             </div>
-          </div>
-        </v-col>
-        <v-col lg="4" xl="4" align-self="center" class="d-none d-lg-flex">
+          </v-col>
+        </v-row>
+      </div>
+      <div style="width: 100%; background-color: #cbcbcb" class="mt-10">
+        <div class="tech-container" style="width: 100%; padding: 20px;n">
           <div>
             <v-img
-              aspect-ratio="1"
-              width="400px"
-              class="image-blur"
-              src="IMG-20190318-WA0013-01.jpeg"
+              width="40px"
+              class="tech"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-offset="-300px"
+              src="tech/vue.svg"
             ></v-img>
           </div>
-        </v-col>
-        <v-col cols="12">
-          <div style="width: 100%; background-color: #cbcbcb">
-            <div class="tech-container" style="width: 100%; height: 100%">
-              <div>
-                <v-img
-                  width="40px"
-                  class="tech"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                  data-aos-offset="-300px"
-                  src="tech/vue.svg"
-                ></v-img>
-              </div>
-              <div>
-                <v-img
-                  width="40px"
-                  class="tech"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  data-aos-offset="-300px"
-                  src="tech/html.png"
-                ></v-img>
-              </div>
-              <div>
-                <v-img
-                  width="40px"
-                  class="tech"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-offset="-300px"
-                  src="tech/css-3.png"
-                ></v-img>
-              </div>
-              <div>
-                <v-img
-                  width="150px"
-                  class="tech"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-offset="-400px"
-                  src="tech/fastapi.png"
-                ></v-img>
-              </div>
-              <div>
-                <v-img
-                  width="150px"
-                  class="tech"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-offset="-500px"
-                  src="tech/plotly.png"
-                ></v-img>
-              </div>
-              <div>
-                <v-img
-                  width="100px"
-                  class="tech"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-offset="-600px"
-                  src="tech/keras.png"
-                ></v-img>
-              </div>
-              <div>
-                <v-img
-                  width="100px"
-                  class="tech"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-offset="-700px"
-                  src="tech/nodejs.png"
-                ></v-img>
-              </div>
-            </div>
+          <div>
+            <v-img
+              width="40px"
+              class="tech"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-offset="-300px"
+              src="tech/html.png"
+            ></v-img>
           </div>
-        </v-col>
-      </v-row>
-      <div id="next" class="d-none d-lg-flex">
+          <div>
+            <v-img
+              width="40px"
+              class="tech"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-offset="-300px"
+              src="tech/css-3.png"
+            ></v-img>
+          </div>
+          <div>
+            <v-img
+              width="150px"
+              class="tech"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-offset="-400px"
+              src="tech/fastapi.png"
+            ></v-img>
+          </div>
+          <div>
+            <v-img
+              width="150px"
+              class="tech"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-offset="-500px"
+              src="tech/plotly.png"
+            ></v-img>
+          </div>
+          <div>
+            <v-img
+              width="100px"
+              class="tech"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-offset="-600px"
+              src="tech/keras.png"
+            ></v-img>
+          </div>
+          <div>
+            <v-img
+              width="100px"
+              class="tech"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-offset="-700px"
+              src="tech/nodejs.png"
+            ></v-img>
+          </div>
+        </div>
+      </div>
+      <div class="my-10 justify-center">
         <v-btn icon href="#work"
           ><v-icon color="#707070" x-large>mdi-chevron-down</v-icon></v-btn
         >
       </div>
     </div>
-    <div style="margin-bottom: 300px">
+    <div>
       <div
         id="work"
-        class="d-flex justify-center align-center"
-        style="position: relative; height: 100vh"
+        class="d-flex flex-column justify-center align-center mt-10"
+        style="min-height: 100%; height: 100vh; position: relative"
       >
         <div
           :style="$vuetify.breakpoint.mdAndDown ? 'width: 100%' : 'width: 50%'"
           data-aos="fade"
           :class="$vuetify.breakpoint.mdAndDown ? 'text-center' : ''"
         >
-          <v-card color="work-card" tile flat height="450px">
+          <v-card color="work-card" tile flat height="700px">
             <div
               class="d-flex align-center mb-10"
               :class="$vuetify.breakpoint.mdAndDown ? 'justify-center' : ''"
@@ -335,25 +326,6 @@
                 <v-icon id="diamond" color="#00eaf2">mdi-cards-diamond</v-icon>
                 <h2 class="mx-10">Work Experiences</h2>
               </div>
-              <svg
-                class="d-none d-xl-flex d-md-none"
-                data-aos="fade-left"
-                data-aos-delay="400"
-                xmlns="http://www.w3.org/2000/svg"
-                width="300"
-                height="1"
-                viewBox="0 0 300 1"
-              >
-                <line
-                  id="Line_12"
-                  data-name="Line 12"
-                  x2="400"
-                  transform="translate(0 0.5)"
-                  fill="none"
-                  stroke="#707070"
-                  stroke-width="1"
-                />
-              </svg>
             </div>
 
             <v-tabs
@@ -381,59 +353,43 @@
                     color="work-card"
                     flat
                     tile
-                    class="ma-auto"
+                    class="py-2"
                     min-width="300px"
                     max-width="900px"
                   >
-                    <h4 class="grey-light mb-10">{{ item.title }}</h4>
-                    <h4 class="grey-light mb-10">{{ item.duration }}</h4>
-                    <h5
+                    <h3 class="grey-light mb-10">{{ item.title }}</h3>
+                    <h3 class="grey-light mb-10">{{ item.duration }}</h3>
+                    <h4
                       class="mb-4"
                       v-for="(description, k) in item.descriptions"
                       :key="k"
                     >
                       {{ description }}
-                    </h5>
+                    </h4>
                   </v-card>
                 </v-tab-item>
               </v-tabs-items>
             </v-tabs>
           </v-card>
         </div>
-        <div style="position: absolute; bottom: 0px">
+        <div>
           <v-btn icon href="#project"
             ><v-icon color="#707070" x-large>mdi-chevron-down</v-icon></v-btn
           >
         </div>
       </div>
     </div>
-    <div id="project" class="d-flex justify-center align-center py-10 px-0">
+    <div
+      id="project"
+      class="d-flex justify-center align-center py-10 px-0 mt-10"
+    >
       <div>
         <v-card color="work-card" tile flat class="">
           <div class="d-flex align-center justify-center mb-10">
             <div class="d-flex align-center">
               <v-icon id="diamond" color="#00eaf2">mdi-cards-diamond</v-icon>
-              <h2 class="mx-10 text-center">Notable Projects</h2>
+              <h2 class="ma-10 text-center">Notable Projects</h2>
             </div>
-            <svg
-              class="d-none d-xl-flex d-md-none"
-              data-aos="fade-left"
-              data-aos-delay="400"
-              xmlns="http://www.w3.org/2000/svg"
-              width="400"
-              height="1"
-              viewBox="0 0 351 1"
-            >
-              <line
-                id="Line_12"
-                data-name="Line 12"
-                x2="400"
-                transform="translate(0 0.5)"
-                fill="none"
-                stroke="#707070"
-                stroke-width="1"
-              />
-            </svg>
           </div>
           <div v-for="(item, n) in projects" :key="n">
             <Projectcard
@@ -482,7 +438,7 @@
       <div class="ma-auto text-center pa-4">
         <h3 class="main-color mb-4">Feel free to</h3>
         <h1 class="mb-4">Drop me a DM</h1>
-        <h4 style="margin-bottom: 100px">I look forward to hearing from you</h4>
+        <h3 style="margin-bottom: 100px">I look forward to hearing from you</h3>
         <a href="mailto:bryanchua5327@gmail.com" target="_blank"
           ><button class="button main-color">
             <h3 class="main-color">Email me</h3>
@@ -511,12 +467,12 @@ export default {
         {
           company: "Gamuda ",
           title: "Software Engineer (R&D)",
-          duration: " Nov 2019 - Now",
+          duration: " Nov 2020 - Present",
           descriptions: [
-            "Joined the R&D Department of Gamuda",
+            "Joined the Research and Development Team of Gamuda",
             "Created the Plant Inventory Management Systems - PIMS website using Python, Dash and Firebase",
             "Currently working on the Tunnel-Insight website using Vue.js, FastAPI and GCP",
-            "Tunnel-Insight is poised provide more visual and comprehensive data, analysis on mining activies and reporting capabilities ",
+            "Tunnel-Insight is poised provide more visual and comprehensive data, analysis on mining activies and enhanced reporting capabilities ",
           ],
         },
         {
@@ -525,8 +481,8 @@ export default {
           duration: " Nov 2019 - Nov 2020",
           descriptions: [
             "Hired by Gamuda as a Tunnel Engineer for the Malaysian KVMRT Line2 SSP Project",
-            "Ensured the timely delivery of the MRT Tunnel from TRX - Conlay - Ampang Park stations",
-            "Awarded the Best Quality Tunnel Award in 2020",
+            "Ensured the timely delivery of the MRT Tunnel from TRX - Conlay - Ampang Park station",
+            "Awarded the Best Quality Tunnel Award in 2019",
           ],
         },
 
@@ -555,7 +511,7 @@ export default {
         {
           title: "Tunnel-Insight",
           description:
-            " Currently working on the Tunnel-Insight website using Vue.js, FastAPI and GCP. Tunnel-Insight is poised provide more visual and comprehensive data, analysis on mining activies and reporting capabilities",
+            " Creating the  Tunnel-Insight website using Vue.js, FastAPI and GCP. Tunnel-Insight is poised provide more visual and comprehensive data, analysis on mining activies and enhanced reporting capabilities.",
           techs: ["Python", "Keras", "Matplotlib", "SUMO"],
           src: "tunnel-insight.jpg",
         },
@@ -611,11 +567,12 @@ export default {
 .tech-container {
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(1fr, 150px));
-  justify-self: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+  grid-template-rows: repeat(auto-fit, minmax(1fr, 50px));
+
   justify-items: center;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 </style>

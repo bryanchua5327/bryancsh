@@ -42,7 +42,6 @@ $grey: #cbcbcb;
 $grey-darken: #cbcbcb;
 
 html {
-  font-family: "Courier New", monospace;
   scroll-behavior: smooth;
 }
 
@@ -58,30 +57,34 @@ h2 {
   font-weight: Bold;
   font-size: 30px;
   color: #cbcbcb;
-  letter-spacing: 0.291em;
+  letter-spacing: 0.1em;
 }
 h3 {
-  font-family: "Open Sans";
+  font-family: "Lato", sans-serif;
   font-size: 20px;
-  color: #707070;
-  letter-spacing: 0.291em;
+  font-weight: 400;
+  color: #cbcbcb;
+
+  letter-spacing: 0.3em;
 }
 
 h4 {
-  font-family: "Open Sans";
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   color: #707070;
+  text-align: justify;
   letter-spacing: 0.2em;
 }
 h5 {
-  font-family: "Open Sans";
-  font-weight: lighter;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
   font-size: 14px;
   color: #707070;
+  text-align: justify;
   letter-spacing: 0.15em;
 }
 p {
-  font-family: "Open Sans";
+  font-family: "Lato", sans-serif;
 
   font-size: 20px;
   color: #707070;
@@ -210,8 +213,8 @@ a:hover {
   /* Opera */
   -o-transform: rotate(90deg);
   position: fixed;
-  top: 800px;
-  right: -230px;
+  top: 1000px;
+  right: -470px;
 }
 
 .email:hover {
@@ -251,13 +254,16 @@ a:hover {
   height: 100vh;
 }
 .cutterheadImg {
-  width: 50%;
-  height: auto;
+  opacity: 0.2;
   position: absolute;
   left: -600px;
-  // -webkit-animation: spin 300s infinite;
-  // -moz-animation: spin 300s infinite;
-  // animation: spin 300s infinite;
+  -webkit-animation: spin 150s infinite;
+  -moz-animation: spin 150s infinite;
+  animation: spin 150s infinite;
+  transition: all 0.2s ease-in-out;
+}
+.cutterheadImg:hover {
+  opacity: 0.7;
 }
 @-moz-keyframes spin {
   100% {

@@ -39,10 +39,10 @@
                 : 'text-align:right'
             "
           >
-            <h4 class="main-color mt-4">Project</h4>
-            <h4 class="mb-4 grey-light">
+            <h3 class="main-color mt-4">Project</h3>
+            <h3 class="mb-4 grey-light">
               {{ item.title }}
-            </h4>
+            </h3>
             <v-card
               color="rgba(15,38,81,0.7)"
               style="min-width: 300px; max-width: 600px; overflow: hidden"
@@ -80,10 +80,10 @@
                 ? 'text-align:center'
                 : 'text-align:left'
             "
-            ><h4 class="main-color mt-4">Project</h4>
-            <h4 class="mb-4 grey-light">
+            ><h3 class="main-color mt-4">Project</h3>
+            <h3 class="mb-4 grey-light">
               {{ item.title }}
-            </h4>
+            </h3>
             <v-card
               color="rgba(24,44,80,0.7)"
               style="min-width: 300px; max-width: 600px; overflow: hidden"

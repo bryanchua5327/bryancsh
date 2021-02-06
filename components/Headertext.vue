@@ -2,10 +2,10 @@
   <h1 class="wordCarousel">
     <div>
       <ul class="flip pa-0">
-        <li><h1 style="color: #707070">I'm Happy You're Here!</h1></li>
-        <li><h1 style="color: #707070">I'm a Software Engineer</h1></li>
-        <li><h1 style="color: #707070">I'm Proudly Malaysian!</h1></li>
-        <li><h1 style="color: #707070">I Worked in a Tunnel!</h1></li>
+        <li><h1 style="color: #707070">Vue.JS Developer</h1></li>
+        <li><h1 style="color: #707070">Software Engineer</h1></li>
+        <li><h1 style="color: #707070">Full-Stack Engineer</h1></li>
+        <li><h1 style="color: #707070">Tunnel Engineer</h1></li>
       </ul>
     </div>
   </h1>
