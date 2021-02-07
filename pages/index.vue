@@ -175,13 +175,12 @@
                   I started my career as a
                   <span class="main-color">tunnel engineer</span>, and had an
                   opportunity to work in a Variable Density Tunnel Boring
-                  Machine, tunneling through the Karstic Limestones soil
-                  profiles of Kuala Lumpur.
+                  Machine, tunneling through the Karstic Limestone ground profiles of Kuala Lumpur.
 
                   <br />
                   <br />
 
-                  After a year in the tunnels, I felt the urge to improve the
+                  After a year in the tunnels, I wanted to help improve the
                   tunneling processes and subsequently joined the<span
                     class="main-color"
                   >
@@ -197,8 +196,8 @@
                   The projects my team and I embark on has exposed me to the
                   wonderful and exciting world
                   <span class="main-color"
-                    >software engineering and web developmen</span
-                  >, coding to industry standards while utilizing new web
+                    >software engineering and web development</span
+                  >, coding to meet industry standards while utilizing new age web
                   technologies such as
                   <span class="main-color">Vue.JS, GCP, FastAPI</span> etc.
                   <br />
