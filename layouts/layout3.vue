@@ -324,6 +324,8 @@ a:hover {
     font-size: 16px;
     color: #707070;
     letter-spacing: 0.291em;
+    text-align: justify;
+    text-align-last: center;
   }
 
   h4 {
@@ -331,6 +333,8 @@ a:hover {
     font-size: 14px;
     color: #707070;
     letter-spacing: 0.2em;
+    text-align: justify;
+    text-align-last: center;
   }
   h5 {
     font-family: "Open Sans";
@@ -338,6 +342,8 @@ a:hover {
     font-size: 12px;
     color: #707070;
     letter-spacing: 0.15em;
+    text-align: justify;
+    text-align-last: center;
   }
 }
 </style>

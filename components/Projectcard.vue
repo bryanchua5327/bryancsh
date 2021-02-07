@@ -32,13 +32,7 @@
         tile
       >
         <v-row>
-          <v-col
-            :style="
-              $vuetify.breakpoint.mdAndDown
-                ? 'text-align:center; background-color:#000f2a;'
-                : 'text-align:right '
-            "
-          >
+          <v-col>
             <h3 class="main-color mt-4">Project</h3>
             <h3 class="mb-4 grey-light">
               {{ item.title }}
@@ -48,7 +42,13 @@
               style="min-width: 300px; max-width: 600px; overflow: hidden"
               class="glassCard pa-4 mb-4"
             >
-              <h5 style="color: white; text-align-last: end" class="ma-5">
+              <h5
+                style="color: white"
+                :style="
+                  $vuetify.breakpoint.mdAndDown ? '' : 'text-align-last: end'
+                "
+                class="ma-5"
+              >
                 {{ item.description }}
               </h5>
             </v-card>
@@ -74,13 +74,8 @@
     >
       <v-card color="transparent" flat tile style="z-index: 1">
         <v-row>
-          <v-col
-            :style="
-              $vuetify.breakpoint.mdAndDown
-                ? 'text-align:center'
-                : 'text-align:left'
-            "
-            ><h3 class="main-color mt-4">Project</h3>
+          <v-col>
+            <h3 class="main-color mt-4">Project</h3>
             <h3 class="mb-4 grey-light">
               {{ item.title }}
             </h3>

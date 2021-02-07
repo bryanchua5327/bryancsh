@@ -125,7 +125,7 @@
       data-aos="fade"
       class="d-flex flex-column justify-center align-center"
     >
-      <v-card color="#182c50" width="100vw" style="z-index: -100">
+      <v-card color="#182c50" width="100vw" style="z-index: -100" class="pa-2">
         <v-row justify="center">
           <v-col lg="5" xl="5" v-if="!$vuetify.breakpoint.mdAndDown">
             <v-img
@@ -155,7 +155,13 @@
                   $vuetify.breakpoint.mdAndDown ? 'text-center ' : 'mx-10 '
                 "
               >
-                <h4>
+                <h4
+                  :style="
+                    $vuetify.breakpoint.mdAndDown
+                      ? 'text-align-last:center '
+                      : ' '
+                  "
+                >
                   Hello, my name is Bryan Chua and I'm a self-taught software
                   engineer based in
                   <span class="main-color">KL, Malaysia</span>. I'm a proud
@@ -189,9 +195,12 @@
                   <br />
 
                   The projects my team and I embark on has exposed me to the
-                  wonderful and exciting world software engineering and web
-                  development, coding to industry standards while utilizing new
-                  web technologies such as Vue.JS, GCP, FastAPI etc.
+                  wonderful and exciting world
+                  <span class="main-color"
+                    >software engineering and web developmen</span
+                  >, coding to industry standards while utilizing new web
+                  technologies such as
+                  <span class="main-color">Vue.JS, GCP, FastAPI</span> etc.
                   <br />
                   <br />
                 </h4>
@@ -381,7 +390,7 @@
         </div>
       </div>
     </div>
-    <div style="height: 30vh; margin:30px">
+    <div style="height: 30vh; margin: 30px">
       <div class="d-none d-lg-flex d-flex justify-center">
         <v-btn icon href="#contact"
           ><v-icon color="#707070" x-large>mdi-chevron-down</v-icon></v-btn
