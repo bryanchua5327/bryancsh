@@ -73,6 +73,7 @@ h4 {
   font-size: 16px;
   color: #707070;
   text-align: justify;
+
   letter-spacing: 0.2em;
 }
 h5 {
@@ -81,6 +82,7 @@ h5 {
   font-size: 14px;
   color: #707070;
   text-align: justify;
+
   letter-spacing: 0.15em;
 }
 p {
@@ -215,6 +217,7 @@ a:hover {
   position: fixed;
   top: 1000px;
   right: -470px;
+  z-index: 100;
 }
 
 .email:hover {

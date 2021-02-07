@@ -36,7 +36,7 @@
             :style="
               $vuetify.breakpoint.mdAndDown
                 ? 'text-align:center; background-color:#000f2a;'
-                : 'text-align:right'
+                : 'text-align:right '
             "
           >
             <h3 class="main-color mt-4">Project</h3>
@@ -48,7 +48,7 @@
               style="min-width: 300px; max-width: 600px; overflow: hidden"
               class="glassCard pa-4 mb-4"
             >
-              <h5 style="color: white" class="ma-5">
+              <h5 style="color: white; text-align-last: end" class="ma-5">
                 {{ item.description }}
               </h5>
             </v-card>

@@ -121,41 +121,38 @@
 
     <div
       id="about"
-      style="min-height: 100%"
+      style="min-height: 100%; height: 100vh"
       data-aos="fade"
       class="d-flex flex-column justify-center align-center"
     >
-      <div>
+      <v-card color="#182c50" width="100vw" style="z-index: -100">
         <v-row justify="center">
-          <v-col
-            offset-lg="1"
-            offset-xl="1"
-            xs="10"
-            sm="10"
-            md="10"
-            lg="5"
-            xl="5"
-          >
+          <v-col lg="5" xl="5" v-if="!$vuetify.breakpoint.mdAndDown">
+            <v-img
+              aspect-ratio="1"
+              width="80%"
+              class="image-blur image-project tech justify-self-center"
+              src="IMG_20200926_175017-01.jpg"
+              style="
+                transform: scale(1.08);
+                box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 20px;
+              "
+            ></v-img>
+          </v-col>
+          <v-col xs="12" sm="12" md="12" lg="5" xl="5" align-self="center">
             <div>
-              <div
-                class="d-flex mb-10"
-                :class="
-                  $vuetify.breakpoint.mdAndDown ? 'justify-center  ' : ' '
-                "
-              ></div>
               <div
                 class="d-flex heading"
                 :class="
                   $vuetify.breakpoint.mdAndDown ? 'justify-center  ' : ' '
                 "
               >
-                <v-icon id="diamond" color="#00eaf2">mdi-cards-diamond</v-icon>
                 <h2 class="mx-10">About me</h2>
               </div>
               <div
                 class="mt-5"
                 :class="
-                  $vuetify.breakpoint.mdAndDown ? 'text-center ' : ' ml-16 '
+                  $vuetify.breakpoint.mdAndDown ? 'text-center ' : 'mx-10 '
                 "
               >
                 <h4>
@@ -166,24 +163,20 @@
                   <span class="main-color"
                     >University of Technology Malaysia</span
                   >
-                  in 2019. <br />
+                  of class 2019. <br />
                   <br />
 
                   I started my career as a
-                  <span class="main-color">tunnel engineer</span>, and worked in
-                  a Variable Density Tunnel Boring Machine.
+                  <span class="main-color">tunnel engineer</span>, and had an
+                  opportunity to work in a Variable Density Tunnel Boring
+                  Machine, tunneling through the Karstic Limestones soil
+                  profiles of Kuala Lumpur.
 
                   <br />
                   <br />
 
-                  To ensure the delivery of the
-                  <span class="main-color"
-                    >Mass Rapid Transit Project - SSP Line 2 </span
-                  >in the heart of KL.
-                  <br />
-                  <br />
-
-                  With my experience in the tunnels, I got to join the<span
+                  After a year in the tunnels, I felt the urge to improve the
+                  tunneling processes and subsequently joined the<span
                     class="main-color"
                   >
                     R&D team</span
@@ -195,111 +188,19 @@
                   <br />
                   <br />
 
-                  Thanks to this opportunity, I got to explore more of the
-                  wonderful world of software engineering.
+                  The projects my team and I embark on has exposed me to the
+                  wonderful and exciting world software engineering and web
+                  development, coding to industry standards while utilizing new
+                  web technologies such as Vue.JS, GCP, FastAPI etc.
                   <br />
                   <br />
-                </h4>
-                <h4>
-                  I code mainly in
-                  <span class="main-color"> Javascript and Python</span>, and
-                  below are technologies I'm familiar with:
                 </h4>
               </div>
             </div>
           </v-col>
-          <v-col
-            lg="4"
-            xl="4"
-            align-self="end"
-            justify-self="end"
-            v-if="!$vuetify.breakpoint.mdAndDown"
-          >
-            <div class="pa-5">
-              <v-img
-                aspect-ratio="1"
-                width="80%"
-                class="image-blur justify-self-center"
-                src="IMG_20200926_175017-01.jpg"
-              ></v-img>
-            </div>
-          </v-col>
         </v-row>
-      </div>
-      <div style="width: 100%; background-color: #cbcbcb" class="mt-10">
-        <div class="tech-container" style="width: 100%; padding: 20px;n">
-          <div>
-            <v-img
-              width="40px"
-              class="tech"
-              data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-offset="-300px"
-              src="tech/vue.svg"
-            ></v-img>
-          </div>
-          <div>
-            <v-img
-              width="40px"
-              class="tech"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-offset="-300px"
-              src="tech/html.png"
-            ></v-img>
-          </div>
-          <div>
-            <v-img
-              width="40px"
-              class="tech"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-offset="-300px"
-              src="tech/css-3.png"
-            ></v-img>
-          </div>
-          <div>
-            <v-img
-              width="150px"
-              class="tech"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-offset="-400px"
-              src="tech/fastapi.png"
-            ></v-img>
-          </div>
-          <div>
-            <v-img
-              width="150px"
-              class="tech"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-offset="-500px"
-              src="tech/plotly.png"
-            ></v-img>
-          </div>
-          <div>
-            <v-img
-              width="100px"
-              class="tech"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-offset="-600px"
-              src="tech/keras.png"
-            ></v-img>
-          </div>
-          <div>
-            <v-img
-              width="100px"
-              class="tech"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-offset="-700px"
-              src="tech/nodejs.png"
-            ></v-img>
-          </div>
-        </div>
-      </div>
+      </v-card>
+
       <div class="my-10 justify-center">
         <v-btn icon href="#work"
           ><v-icon color="#707070" x-large>mdi-chevron-down</v-icon></v-btn
@@ -388,7 +289,12 @@
           <div class="d-flex align-center justify-center mb-10">
             <div class="d-flex align-center">
               <v-icon id="diamond" color="#00eaf2">mdi-cards-diamond</v-icon>
-              <h2 class="ma-10 text-center">Notable Projects</h2>
+              <h2
+                class="ma-10"
+                :class="$vuetify.breakpoint.mdAndDown ? 'text-center' : ''"
+              >
+                Notable Projects
+              </h2>
             </div>
           </div>
           <div v-for="(item, n) in projects" :key="n">
@@ -401,7 +307,81 @@
         </v-card>
       </div>
     </div>
-    <div style="height: 30vh">
+    <div style="width: 100%; background-color: #cbcbcb" class="mt-10">
+      <div class="tech-container" style="width: 100%; padding: 20px">
+        <div class="image-wrapper">
+          <v-img
+            width="40px"
+            class="tech"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-offset="-300px"
+            src="tech/vue.svg"
+          ></v-img>
+        </div>
+        <div class="image-wrapper">
+          <v-img
+            width="40px"
+            class="tech"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-offset="-300px"
+            src="tech/html.png"
+          ></v-img>
+        </div>
+        <div class="image-wrapper">
+          <v-img
+            width="40px"
+            class="tech"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-offset="-300px"
+            src="tech/css-3.png"
+          ></v-img>
+        </div>
+        <div class="image-wrapper">
+          <v-img
+            width="150px"
+            class="tech"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-offset="-400px"
+            src="tech/fastapi.png"
+          ></v-img>
+        </div>
+        <div class="image-wrapper">
+          <v-img
+            width="150px"
+            class="tech"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-offset="-500px"
+            src="tech/plotly.png"
+          ></v-img>
+        </div>
+        <div class="image-wrapper">
+          <v-img
+            width="100px"
+            class="tech"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-offset="-600px"
+            src="tech/keras.png"
+          ></v-img>
+        </div>
+        <div class="image-wrapper">
+          <v-img
+            width="100px"
+            class="tech"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-offset="-700px"
+            src="tech/nodejs.png"
+          ></v-img>
+        </div>
+      </div>
+    </div>
+    <div style="height: 30vh; margin:30px">
       <div class="d-none d-lg-flex d-flex justify-center">
         <v-btn icon href="#contact"
           ><v-icon color="#707070" x-large>mdi-chevron-down</v-icon></v-btn
@@ -438,7 +418,8 @@
       <div class="ma-auto text-center pa-4">
         <h3 class="main-color mb-4">Feel free to</h3>
         <h1 class="mb-4">Drop me a DM</h1>
-        <h3 style="margin-bottom: 100px">I look forward to hearing from you</h3>
+        <h3 style="margin-bottom: 50px">I look forward to hearing from you</h3>
+
         <a href="mailto:bryanchua5327@gmail.com" target="_blank"
           ><button class="button main-color">
             <h3 class="main-color">Email me</h3>
@@ -492,7 +473,7 @@ export default {
           duration: " June 2018 - Sept 2019",
           descriptions: [
             "Hired by Gamuda as a technical Intern for the Mechanical& Electrical Department",
-            "Reviewed shop drawings pertaining Cold Water, Fire Fighting ,Sanitary and HVAC systems.",
+            "Reviewed shop drawings pertaining Cold Water, Fire Fighting ,Sanitary and HVAC systems for station buildings in SSP Line 2",
           ],
         },
 
@@ -502,8 +483,8 @@ export default {
           duration: "Apr 2018-Dec 2018",
           descriptions: [
             "Started an initiative to teach young kids to code through block programming.",
-            "We made the courses super interactive by allowing kids to create their own world using shapes and physics.",
-            "The final product is a VR world in which kids can view and interact with.",
+            "We crafted interactive courses that allow kids to unleash their creativity by creating their own world using 3D shapes and apply physics to objects.",
+            "The final product is a VR world in which kids can view and play with.",
           ],
         },
       ],
@@ -511,21 +492,21 @@ export default {
         {
           title: "Tunnel-Insight",
           description:
-            " Creating the  Tunnel-Insight website using Vue.js, FastAPI and GCP. Tunnel-Insight is poised provide more visual and comprehensive data, analysis on mining activies and enhanced reporting capabilities.",
+            " Creating the Tunnel-Insight website using Vue.js, FastAPI and GCP. Tunnel-Insight is poised provide more visual and comprehensive data, analysis on mining activies and enhanced reporting capabilities.",
           techs: ["Python", "Keras", "Matplotlib", "SUMO"],
           src: "tunnel-insight.jpg",
         },
         {
           title: "Personal Portfolio",
           description:
-            "First personal portoflio created to test my skills in general web design in Adobe XD, responsive web and Nuxt.js.",
+            "First personal portoflio created to test my skills in general web design in Adobe XD, responsive web design and Nuxt.js.",
           techs: ["Nuxt.js", "Vue.js", "Vuetify", "Adobe XD"],
           src: "Personal Site.jpg",
         },
         {
           title: "Deep Learning Traffic Lights",
           description:
-            "Created a simulated traffic light junction controlled by a deep reinforcement learning agent to optimize the duration of the signals dynamically based on traffic heaviness levels",
+            "Created a simulated traffic light junction controlled by a deep reinforcement learning agent to reduce waiting time at junctions. The agent is capable of controlling the duration of the signals dynamically based on traffic heaviness levels.",
           techs: ["Python", "Keras", "Matplotlib", "SUMO"],
           src: "FYP.jpg",
         },
@@ -568,11 +549,20 @@ export default {
   display: grid;
 
   grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
-  grid-template-rows: repeat(auto-fit, minmax(1fr, 50px));
+  grid-template-rows: repeat(auto-fit, 100px);
 
   justify-items: center;
   justify-content: center;
   align-items: center;
   align-content: center;
+  div {
+    align-self: center;
+    justify-self: center;
+    display: grid;
+  }
+}
+
+.image-wrapper {
+  height: 70px;
 }
 </style>
